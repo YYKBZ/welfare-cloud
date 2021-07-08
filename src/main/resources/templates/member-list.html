@@ -1,0 +1,209 @@
+<!--_meta 作为公共模版分离出去-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<link rel="Bookmark" href="favicon.ico" >
+<link rel="Shortcut Icon" href="favicon.ico" />
+<!--[if lt IE 9]>
+<script type="text/javascript" src="lib/html5.js"></script>
+<script type="text/javascript" src="lib/respond.min.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="/static/h-ui/css/H-ui.min.css" />
+<link rel="stylesheet" type="text/css" href="/static/h-ui.admin/css/H-ui.admin.css" />
+<link rel="stylesheet" type="text/css" href="/static/lib/Hui-iconfont/1.0.8/iconfont.css" />
+<link rel="stylesheet" type="text/css" href="/static/h-ui.admin/skin/default/skin.css" id="skin" />
+<link rel="stylesheet" type="text/css" href="/static/h-ui.admin/css/style.css" />
+<!--[if IE 6]>
+<script type="text/javascript" src="http://lib.h-ui.net/DD_belatedPNG_0.0.8a-min.js" ></script>
+<script>DD_belatedPNG.fix('*');</script><![endif]-->
+<!--/meta 作为公共模版分离出去-->
+
+<title>会员列表 - 会员管理 - H-ui.admin v3.0</title>
+<meta name="keywords" content="H-ui.admin v3.0,H-ui网站后台模版,后台模版下载,后台管理系统模版,HTML后台模版下载">
+<meta name="description" content="H-ui.admin v3.0，是一款由国人开发的轻量级扁平化网站后台模板，完全免费开源的网站后台管理系统模版，适合中小型CMS后台系统。">
+</head>
+<body>
+<!--_header 作为公共模版分离出去-->
+<header class="navbar-wrapper">
+	<div class="navbar navbar-fixed-top">
+		<div class="container-fluid cl"> <a class="logo navbar-logo f-l mr-10 hidden-xs" >H-ui.admin</a> <a class="logo navbar-logo-m f-l mr-10 visible-xs" >H-ui</a> 
+			<span class="logo navbar-slogan f-l mr-10 hidden-xs">v3.0</span> 
+			<a aria-hidden="false" class="nav-toggle Hui-iconfont visible-xs" href="javascript:;">&#xe667;</a>
+		
+			<nav id="Hui-userbar" class="nav navbar-nav navbar-userbar hidden-xs">
+				<ul class="cl">
+					<li>系统管理员</li>
+					<li class="dropDown dropDown_hover"> <a href="#" class="dropDown_A">admin <i class="Hui-iconfont">&#xe6d5;</i></a>
+						<ul class="dropDown-menu menu radius box-shadow">
+							<li><a href="#">退出</a></li>
+				</ul>
+			
+		</ul>
+	</nav>
+</div>
+</div>
+</header>
+<!--/_header 作为公共模版分离出去-->
+
+<!--_menu 作为公共模版分离出去-->
+<aside class="Hui-aside">
+	
+	<div class="menu_dropdown bk_2">
+		<dl id="menu-article">
+			<dt><i class="Hui-iconfont">&#xe616;</i> 资讯管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+			<dd>
+				<ul>
+					<li><a href="article-list.html" title="资讯管理">资讯管理</a></li>
+				</ul>
+			</dd>
+		</dl>
+		<dl id="menu-picture">
+			<dt><i class="Hui-iconfont">&#xe613;</i> 场地管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+			<dd>
+				<ul>
+					<li><a href="picture-list.html" title="场地列表">场地列表</a></li>
+				</ul>
+			</dd>
+		</dl>
+		<dl id="menu-product">
+			<dt><i class="Hui-iconfont">&#xe620;</i> 设备管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+			<dd>
+				<ul>
+					
+					<li><a href="product-list.html" title="设备列表">设备列表</a></li>
+				</ul>
+			</dd>
+		</dl>
+
+		<dl id="menu-member">
+			<dt class="selected"><i class="Hui-iconfont">&#xe60d;</i> 审批管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+			<dd style="display: block;">
+				<ul>
+					<li class="current"><a href="member-list.html" title="审批列表">审批列表</a></li>
+				</ul>
+			</dd>
+		</dl>
+		<dl id="menu-admin">
+			<dt><i class="Hui-iconfont">&#xe62d;</i> 管理员管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+			<dd>
+				<ul>
+					<li><a href="admin-role.html" title="角色管理">角色管理</a></li>
+					<li><a href="admin-permission.html" title="权限管理">权限管理</a></li>
+					<li><a href="admin-list.html" title="管理员列表">管理员列表</a></li>
+				</ul>
+			</dd>
+		</dl>
+		<dl id="menu-system">
+				<dt><i class="Hui-iconfont">&#xe62e;</i> 通知管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+				<dd>
+					<ul>
+				<!-- 		<li><a href="system-base.html" title="系统设置">系统设置</a></li> -->
+						<li><a href="system-category.html" title="栏目管理">通知信息列表</a></li>
+						<!-- <li><a href="system-data.html" title="数据字典">数据字典</a></li>
+						<li><a href="system-shielding.html" title="屏蔽词">屏蔽词</a></li>
+						<li><a href="system-log.html" title="系统日志">系统日志</a></li> -->
+					</ul>
+				</dd>
+			</dl>
+	</div>
+</aside>
+<div class="dislpayArrow hidden-xs"><a class="pngfix" href="javascript:void(0);" onClick="displaynavbar(this)"></a></div>
+<!--/_menu 作为公共模版分离出去-->
+
+<section class="Hui-article-box">
+	<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 用户中心 <span class="c-gray en">&gt;</span> 审批列表<a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a></nav>
+	<div class="Hui-article">
+		<article class="cl pd-20">
+			<div class="text-c"> 日期范围：
+				<input type="text" onfocus="WdatePicker({maxDate:'#F{$dp.$D(\'datemax\')||\'%y-%M-%d\'}'})" id="datemin" class="input-text Wdate" style="width:120px;">
+				-
+				<input type="text" onfocus="WdatePicker({minDate:'#F{$dp.$D(\'datemin\')}',maxDate:'%y-%M-%d'})" id="datemax" class="input-text Wdate" style="width:120px;">
+				</span> <span class="select-box" style="width:150px">
+				<select class="select" name="brandclass" size="1">
+					<option value="0" selected>无</option>
+					<option value="1">未审批</option>
+						<option value="2">一级审批</option>
+							<option value="3">二级审批</option>
+								<option value="4">已通过</option>
+								<option value="4">未通过</option>
+				</select>
+				</span>
+				<button type="button" class="btn btn-success" id="" name="" onClick="picture_colume_add(this);"><i class="Hui-iconfont">&#xe600;</i> 查询</button>
+				
+			</div>
+			
+			<div class="mt-20">
+				<table class="table table-border table-bordered table-hover table-bg table-sort">
+					<thead>
+						<tr class="text-c">
+							<th width="20">申请编号</th>
+							<th width="100">微信号</th>
+							<th width="40">姓名</th>
+							<th width="90">理由</th>
+							<th width="120">开始时间</th>
+							<th width="120">结束时间</th>
+							<th width="120">申请时间</th>
+							<th width="50">初审人</th>
+							<th width="50">终审人</th>
+							<th width="50">初审意见</th>
+							<th width="50">终审意见</th>
+							<th width="50">审批结论</th>
+							<th width="50">审批状态</th>
+							<th width="120">最终审批时间</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="text-c">
+							<td>1</td>
+							<td>1231231231</td>
+							<td>张三</td>
+							<td>开会</td>
+							<td>******上午10点</td>
+							<td>******下午6点</td>
+							<td>****前一星期天上午11点</td>
+							<td>孵化中心</td>
+							<td>民政局</td>
+							<td>通过</td>
+							<td>不通过</td>
+							<td>因某种原因不能通过</td>
+							<td>没通过</td>
+							<td>****前两天天上午9点</td>
+							
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</article>
+	</div>
+</section>
+
+<!--_footer 作为公共模版分离出去-->
+<script type="text/javascript" src="lib/jquery/1.9.1/jquery.min.js"></script> 
+<script type="text/javascript" src="lib/layer/2.4/layer.js"></script>
+<script type="text/javascript" src="static/h-ui/js/H-ui.js"></script> 
+<script type="text/javascript" src="static/h-ui.admin/js/H-ui.admin.page.js"></script>
+<!--/_footer /作为公共模版分离出去-->
+
+<!--请在下方写此页面业务相关的脚本-->
+<script type="text/javascript" src="/static/lib/My97DatePicker/4.8/WdatePicker.js"></script>
+<script type="text/javascript" src="/static/lib/datatables/1.10.15/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="/static/lib/laypage/1.2/laypage.js"></script>
+<script type="text/javascript">
+$('.table-sort').dataTable({
+	"aaSorting": [[ 1, "desc" ]],//默认第几个排序
+	"bStateSave": true,//状态保存
+	"aoColumnDefs": [
+	  //{"bVisible": false, "aTargets": [ 3 ]} //控制列的隐藏显示
+	  {"orderable":false,"aTargets":[0,4]}// 制定列不参与排序
+	]
+});
+
+</script>
+<!--/请在上方写此页面业务相关的脚本-->
+</body>
+</html>
